@@ -10,6 +10,9 @@
     "lint": "jshint src test",
     "report-coverage": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
+  "bin": {
+    "frau": "bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Brightspace/gulp-frau-publisher.git"
@@ -39,6 +42,7 @@
     "gulp-util": "^3.0.1",
     "knox": "^0.9.1",
     "q": "^1.1.2",
-    "semver": "^4.1.0"
+    "semver": "^4.1.0",
+    "commander": "~2.6.0"
   }
 }
